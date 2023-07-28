@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Class Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #007BFF;
+            margin-bottom: 5px; /* Add a small margin at the bottom to separate from the subtitle */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: normal;
+            color: #555;
+        }
+
+        #mapCanvas {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        #buildingInput {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #searchButton {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #searchButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Campus Class Finder</h1>
+    <h2>To find a pathway to your class</h2>
+
+    <div id="container">
+        <canvas id="mapCanvas" width="709" height="804"></canvas>
+        <br>
+        <input type="text" id="buildingInput" placeholder="Enter building name">
+        <button id="searchButton">Search</button>
+    </div>
+    <script src="directions.js"></script>
+</body>
+</html>
