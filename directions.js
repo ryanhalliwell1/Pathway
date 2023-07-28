@@ -377,7 +377,7 @@ function drawPath(path) {
         //drawGridOnImage(); // Move this function call inside the image.onload callback
     };
   // Replace "path/to/your/campus/map/image.png" with the correct image path
-  image.src = "file:///C:/Users/ryanh/classFinder/imagesFolder/theOne.png";
+  image.src =     ![map](/least-github-pages/assets/theOne.png);
 
   const pin  = new Image();
   pin.src ="file:///C:/Users/ryanh/classFinder/imagesFolder/StartPin.png";
